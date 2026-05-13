@@ -1,0 +1,39 @@
+# Default algorithm configuration
+
+# Chaotic operator selection
+chaotic:
+  map_type: "logistic"  # logistic, tent, chebyshev, bernoulli
+  initial_mle: 0.5
+  adaptation: true
+
+# Lyapunov control
+lyapunov:
+  target_exponent: 0.25
+  window_size: 50
+  min_threshold: 0.1
+  max_threshold: 0.5
+
+# LNS parameters
+lns:
+  max_iterations: 500
+  destroy_fraction: 0.3
+  min_destroy: 2
+  max_destroy: 10
+
+# Simulated annealing
+annealing:
+  initial_temperature: 100.0
+  final_temperature: 0.1
+  cooling_rate: 0.995
+
+# Quantum parameters
+quantum:
+  max_qubits: 40
+  num_samples: 10
+  use_sqa: true
+
+# Risk weights
+risk:
+  time_window_weight: 0.3
+  capacity_weight: 0.3
+  operational_weight: 0.4

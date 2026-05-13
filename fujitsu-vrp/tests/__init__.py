@@ -1,0 +1,1 @@
+"""Tests for Fujitsu VRP package."""
